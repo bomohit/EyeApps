@@ -20,6 +20,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Home2Activity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Home3Activity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ResultActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
