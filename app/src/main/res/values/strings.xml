@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">EyeApps</string>
+
+<!--    question and answer-->
+    <string name="opening_question">Please answer the following questions by checking the box that best represents your answer.</string>
+    <string name="question_1">Have you experienced any of the following during the last week:</string>
+    <string name="type_1">Eyes that are sensitive to light?</string>
+    <string name="type_2">Eyes that feel gritty?</string>
+    <string name="type_3">Painful or sore eyes?</string>
+    <string name="type_4">Blurred vision?</string>
+    <string name="type_5">Poor vision?</string>
+
+    <string name="question_2">Have problems with your eyes limited you in performing any of the following during the last week:</string>
+    <string name="type_6">Reading?</string>
+    <string name="type_7">Driving at night?</string>
+    <string name="type_8">Working with a computer or bank machine (ATM)?</string>
+    <string name="type_9">Watching TV?</string>
+
+    <string name="question_3">Have your eyes felt uncomfortable in any of the following situations during the last week:</string>
+    <string name="type_10">Windy conditions?</string>
+    <string name="type_11">Places or areas with low humidity (very dry)?</string>
+    <string name="type_12">Areas that are air conditioned?</string>
+    <string name="type_13"></string>
+
+    <string name="answer_1">All of the time</string>
+    <string name="answer_2">Most of the time</string>
+    <string name="answer_3">Half of the time</string>
+    <string name="answer_4">Some of the time</string>
+    <string name="answer_5">None of the time</string>
+
+
+
+</resources>
