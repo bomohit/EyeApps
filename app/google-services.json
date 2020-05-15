@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "965700150117",
+    "firebase_url": "https://eyeapps-7655a.firebaseio.com",
+    "project_id": "eyeapps-7655a",
+    "storage_bucket": "eyeapps-7655a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965700150117:android:c724737f755ecd0510378c",
+        "android_client_info": {
+          "package_name": "com.example.eyeapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "965700150117-c9slidq763slg8s5r783hmtvs71ih0gn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eyeapps",
+            "certificate_hash": "7e7fc4a0c7d0e98d95f3e0083d69e1d07548e235"
+          }
+        },
+        {
+          "client_id": "965700150117-alm54dn2iicb272fq3qu94e1adfhrdnk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkiV-NEH716u4hKgiekqA5dLzb6yzEwKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "965700150117-alm54dn2iicb272fq3qu94e1adfhrdnk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

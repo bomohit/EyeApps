@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">EyeApps</string>
+    <string name="app_name">Dry Eye Syndrome Application</string>
 
 <!--    question and answer-->
     <string name="opening_question">Please answer the following questions by checking the box that best represents your answer.</string>

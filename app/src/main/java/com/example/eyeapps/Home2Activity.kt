@@ -20,67 +20,69 @@ class Home2Activity : AppCompatActivity() {
 
             if(!validate()) {
                 Toast.makeText(applicationContext, "Fail", Toast.LENGTH_SHORT).show()
+            } else {
+                // type 6
+                if(radioButton26.isChecked) {
+                    total += 4;
+                } else if(radioButton27.isChecked) {
+                    total += 3;
+                } else if(radioButton28.isChecked) {
+                    total += 2;
+                } else if(radioButton29.isChecked) {
+                    total += 1;
+                } else if(radioButton30.isChecked) {
+                    total += 0;
+                }
+
+                // type 7
+                if(radioButton31.isChecked) {
+                    total += 4;
+                } else if(radioButton32.isChecked) {
+                    total += 3;
+                } else if(radioButton33.isChecked) {
+                    total += 2;
+                } else if(radioButton34.isChecked) {
+                    total += 1;
+                } else if(radioButton35.isChecked) {
+                    total += 0;
+                }
+
+                // type 8
+                if(radioButton36.isChecked) {
+                    total += 4;
+                } else if(radioButton37.isChecked) {
+                    total += 3;
+                } else if(radioButton38.isChecked) {
+                    total += 2;
+                } else if(radioButton39.isChecked) {
+                    total += 1;
+                } else if(radioButton40.isChecked) {
+                    total += 0;
+                }
+
+                // type 9
+                if(radioButton41.isChecked) {
+                    total += 4;
+                } else if(radioButton42.isChecked) {
+                    total += 3;
+                } else if(radioButton43.isChecked) {
+                    total += 2;
+                } else if(radioButton44.isChecked) {
+                    total += 1;
+                } else if(radioButton45.isChecked) {
+                    total += 0;
+                }
+
+
+
+                d("bomoh", "total: $total")
+                // pass data and open next page
+                val intent = Intent(this,Home3Activity::class.java)
+                intent.putExtra("total", total.toString())
+                startActivity(intent)
             }
 
-            // type 6
-            if(radioButton26.isChecked) {
-                total += 4;
-            } else if(radioButton27.isChecked) {
-                total += 3;
-            } else if(radioButton28.isChecked) {
-                total += 2;
-            } else if(radioButton29.isChecked) {
-                total += 1;
-            } else if(radioButton30.isChecked) {
-                total += 0;
-            }
 
-            // type 7
-            if(radioButton31.isChecked) {
-                total += 4;
-            } else if(radioButton32.isChecked) {
-                total += 3;
-            } else if(radioButton33.isChecked) {
-                total += 2;
-            } else if(radioButton34.isChecked) {
-                total += 1;
-            } else if(radioButton35.isChecked) {
-                total += 0;
-            }
-
-            // type 8
-            if(radioButton36.isChecked) {
-                total += 4;
-            } else if(radioButton37.isChecked) {
-                total += 3;
-            } else if(radioButton38.isChecked) {
-                total += 2;
-            } else if(radioButton39.isChecked) {
-                total += 1;
-            } else if(radioButton40.isChecked) {
-                total += 0;
-            }
-
-            // type 9
-            if(radioButton41.isChecked) {
-                total += 4;
-            } else if(radioButton42.isChecked) {
-                total += 3;
-            } else if(radioButton43.isChecked) {
-                total += 2;
-            } else if(radioButton44.isChecked) {
-                total += 1;
-            } else if(radioButton45.isChecked) {
-                total += 0;
-            }
-
-
-
-            d("bomoh", "total: $total")
-            // pass data and open next page
-            val intent = Intent(this,Home3Activity::class.java)
-            intent.putExtra("total", total.toString())
-            startActivity(intent)
 
         }
 

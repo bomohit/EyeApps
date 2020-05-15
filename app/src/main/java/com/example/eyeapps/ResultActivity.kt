@@ -11,14 +11,31 @@ class ResultActivity : AppCompatActivity() {
         setContentView(R.layout.activity_result)
 
         // get the previous value
-        var total = intent.getStringExtra("total").toInt()
+        var total = intent.getStringExtra("total").toFloat()
 
-        val marks = (100/48)*total
+        val marks = (2.09*total).toInt()
+
+        if(total <= 10) {
+            textCondition.text = "Normal"
+        } else if (total <=18) {
+            textCondition.text = "Mild"
+        } else if (total <=45) {
+            textCondition.text = "Moderate"
+        } else {
+            textCondition.text = "Severe"
+        }
 
         textScore.text = marks.toString()
 
         button4Redo.setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
+            startActivity(intent)
+            finish()
+        }
+
+        button4Exit.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent)
             finish()

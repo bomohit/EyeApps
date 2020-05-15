@@ -19,53 +19,55 @@ class Home3Activity : AppCompatActivity(){
         button3Result.setOnClickListener {
             if(!validate()) {
                 Toast.makeText(applicationContext, "Fail", Toast.LENGTH_SHORT).show()
+            } else {
+                // type 10
+                if(radioButton46.isChecked) {
+                    total += 4;
+                } else if(radioButton47.isChecked) {
+                    total += 3;
+                } else if(radioButton48.isChecked) {
+                    total += 2;
+                } else if(radioButton49.isChecked) {
+                    total += 1;
+                } else if(radioButton50.isChecked) {
+                    total += 0;
+                }
+
+                // type 11
+                if(radioButton51.isChecked) {
+                    total += 4;
+                } else if(radioButton52.isChecked) {
+                    total += 3;
+                } else if(radioButton53.isChecked) {
+                    total += 2;
+                } else if(radioButton54.isChecked) {
+                    total += 1;
+                } else if(radioButton55.isChecked) {
+                    total += 0;
+                }
+
+                // type 12
+                if(radioButton56.isChecked) {
+                    total += 4;
+                } else if(radioButton57.isChecked) {
+                    total += 3;
+                } else if(radioButton58.isChecked) {
+                    total += 2;
+                } else if(radioButton59.isChecked) {
+                    total += 1;
+                } else if(radioButton60.isChecked) {
+                    total += 0;
+                }
+
+
+                d("bomoh", "total: $total")
+                // pass data and open next page
+                val intent = Intent(this,ResultActivity::class.java)
+                intent.putExtra("total", total.toString())
+                startActivity(intent)
             }
 
-            // type 10
-            if(radioButton46.isChecked) {
-                total += 4;
-            } else if(radioButton47.isChecked) {
-                total += 3;
-            } else if(radioButton48.isChecked) {
-                total += 2;
-            } else if(radioButton49.isChecked) {
-                total += 1;
-            } else if(radioButton50.isChecked) {
-                total += 0;
-            }
 
-            // type 11
-            if(radioButton51.isChecked) {
-                total += 4;
-            } else if(radioButton52.isChecked) {
-                total += 3;
-            } else if(radioButton53.isChecked) {
-                total += 2;
-            } else if(radioButton54.isChecked) {
-                total += 1;
-            } else if(radioButton55.isChecked) {
-                total += 0;
-            }
-
-            // type 12
-            if(radioButton56.isChecked) {
-                total += 4;
-            } else if(radioButton57.isChecked) {
-                total += 3;
-            } else if(radioButton58.isChecked) {
-                total += 2;
-            } else if(radioButton59.isChecked) {
-                total += 1;
-            } else if(radioButton60.isChecked) {
-                total += 0;
-            }
-
-
-            d("bomoh", "total: $total")
-            // pass data and open next page
-            val intent = Intent(this,ResultActivity::class.java)
-            intent.putExtra("total", total.toString())
-            startActivity(intent)
         }
 
     }
